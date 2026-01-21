@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Header Toolbar -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/primary_orange"
+                android:padding="@dimen/spacing_default">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/groups"
+                    android:textSize="@dimen/text_title"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif-medium" />
+
+                <ImageView
+                    android:layout_width="@dimen/avatar_size_medium"
+                    android:layout_height="@dimen/avatar_size_medium"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_menu_myowner"
+                    android:contentDescription="Profile" />
+            </RelativeLayout>
+
+            <!-- Groups List -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_groups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_default" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- FAB for Create Group -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_create_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginBottom="70dp"
+        android:text="New Group"
+        android:textColor="@color/white"
+        app:icon="@android:drawable/ic_input_add"
+        app:iconTint="@color/white"
+        app:backgroundTint="@color/primary_orange" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
