@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_expense_details"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary_orange"
+            android:elevation="4dp"
+            app:title="Expense Details"
+            app:titleTextColor="@color/white"
+            app:navigationIcon="?attr/homeAsUpIndicator" />
+
+        <!-- Expense Info Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_default"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_default">
+
+                <TextView
+                    android:id="@+id/tv_expense_detail_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expense Description"
+                    android:textAppearance="@style/TextAppearance.Title"
+                    android:textColor="@color/text_primary" />
+
+                <TextView
+                    android:id="@+id/tv_expense_detail_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:text="₹500.00"
+                    android:textAppearance="@style/TextAppearance.Display"
+                    android:textColor="@color/primary_orange" />
+
+                <TextView
+                    android:id="@+id/tv_expense_detail_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:text="Category"
+                    android:textSize="@dimen/text_caption"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_pill_green"
+                    android:paddingStart="@dimen/pill_padding_horizontal"
+                    android:paddingEnd="@dimen/pill_padding_horizontal"
+                    android:paddingTop="@dimen/spacing_tiny"
+                    android:paddingBottom="@dimen/spacing_tiny" />
+
+                <TextView
+                    android:id="@+id/tv_expense_detail_paid_by"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:text="Paid by You"
+                    android:textSize="@dimen/text_body"
+                    android:textColor="@color/text_secondary" />
+
+                <TextView
+                    android:id="@+id/tv_expense_detail_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_tiny"
+                    android:text="Date"
+                    android:textSize="@dimen/text_caption"
+                    android:textColor="@color/text_hint" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Participants Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_default"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:text="Split Among"
+            android:textAppearance="@style/TextAppearance.Title"
+            android:textColor="@color/text_primary" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_expense_participants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_default" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/screen_background">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/primary_orange"
+        android:padding="@dimen/spacing_default">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Recent Activity"
+            android:textSize="@dimen/text_title"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium" />
+
+    </RelativeLayout>
+
+    <!-- Activities List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_activities"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/spacing_small" />
+
+    <!-- Empty State -->
+    <TextView
+        android:id="@+id/tv_empty_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="No expenses yet.\n\nAdd your first expense to see it here!"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_body"
+        android:textColor="@color/text_secondary"
+        android:visibility="gone" />
+
+</LinearLayout>
