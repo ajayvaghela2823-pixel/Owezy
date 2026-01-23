@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/spacing_default">
+
+    <ImageView
+        android:id="@+id/iv_friend_avatar"
+        android:layout_width="@dimen/avatar_size_medium"
+        android:layout_height="@dimen/avatar_size_medium"
+        android:src="@drawable/ic_menu_myowner"
+        android:contentDescription="Avatar" />
+
+    <TextView
+        android:id="@+id/tv_friend_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alex Jensen"
+        android:textSize="@dimen/text_caption"
+        android:textColor="@color/text_primary"
+        android:layout_marginTop="@dimen/spacing_tiny" />
+
+    <TextView
+        android:id="@+id/tv_friend_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$402.75"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/green_positive"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="@dimen/spacing_tiny" />
+
+</LinearLayout>
