@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/card_margin"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation"
+    app:cardBackgroundColor="@color/card_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_default">
+
+        <!-- Group Icon -->
+        <ImageView
+            android:id="@+id/iv_group_icon"
+            android:layout_width="@dimen/avatar_size_large"
+            android:layout_height="@dimen/avatar_size_large"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@android:drawable/ic_menu_myplaces"
+            android:contentDescription="Group Icon" />
+
+        <!-- Group Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_group_icon"
+            android:layout_toStartOf="@id/tv_group_total"
+            android:layout_marginStart="@dimen/spacing_medium"
+            android:layout_marginEnd="@dimen/spacing_medium"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Birthday House"
+                android:textSize="@dimen/text_body"
+                android:textColor="@color/text_primary"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/tv_member_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John owes you $1052.75"
+                android:textSize="@dimen/text_caption"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="@dimen/spacing_tiny" />
+
+            <TextView
+                android:id="@+id/tv_group_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status_you_are_owed"
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/green_positive"
+                android:paddingStart="@dimen/spacing_small"
+                android:paddingEnd="@dimen/spacing_small"
+                android:paddingTop="@dimen/spacing_tiny"
+                android:paddingBottom="@dimen/spacing_tiny"
+                android:background="@drawable/bg_pill_green"
+                android:layout_marginTop="@dimen/spacing_tiny" />
+        </LinearLayout>
+
+        <!-- Total Amount -->
+        <TextView
+            android:id="@+id/tv_group_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="$4508.32"
+            android:textSize="@dimen/text_title"
+            android:textColor="@color/text_primary"
+            android:fontFamily="sans-serif-medium" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
