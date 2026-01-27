@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Orange/Coral Theme - Slightly Brighter for Dark Mode -->
+    <color name="primary_orange">#FF8A65</color>
+    <color name="primary_coral">#FFAB91</color>
+    <color name="primary_light">#FFCCBC</color>
+    <color name="primary_dark">#FF7043</color>
+    <color name="primary_very_light">#FFE0C4</color>
+
+    <!-- Background Colors - Dark Theme -->
+    <color name="background_gradient_start">#1E1E1E</color>
+    <color name="background_gradient_end">#2C2C2C</color>
+    <color name="card_background">#2C2C2C</color>
+    <color name="nav_bar_background">#1E1E1E</color>
+    <color name="screen_background">#1E1E1E</color>
+    <color name="elevated_surface">#3C3C3C</color>
+
+    <!-- Status Colors - Optimized for Dark Mode -->
+    <color name="green_positive">#66BB6A</color>
+    <color name="green_light">#81C784</color>
+    <color name="green_dark">#4CAF50</color>
+    <color name="red_negative">#EF5350</color>
+    <color name="red_light">#E57373</color>
+    <color name="red_dark">#F44336</color>
+
+    <!-- Text Colors - FIXED for Dark Mode Visibility -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#E0E0E0</color>
+    <color name="text_hint">#9E9E9E</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_disabled">#757575</color>
+
+    <!-- Category Colors - Brightened for Dark Mode Visibility -->
+    <color name="category_trip">#FF8A65</color>
+    <color name="category_dining">#CE93D8</color>
+    <color name="category_shopping">#FFB74D</color>
+    <color name="category_gifts">#F48FB1</color>
+    <color name="category_balloons">#64B5F6</color>
+    <color name="category_stationery">#4DB6AC</color>
+    <color name="category_groceries">#81C784</color>
+    <color name="category_bills">#FFB300</color>
+    <color name="category_entertainment">#9575CD</color>
+    <color name="category_other">#90A4AE</color>
+
+    <!-- UI Element Colors - Dark Mode Optimized -->
+    <color name="button_primary">#FF8A65</color>
+    <color name="button_secondary">#424242</color>
+    <color name="fab_background">#FF8A65</color>
+    <color name="ripple_color">#40FF8A65</color>
+
+    <!-- Utility Colors - Dark Mode -->
+    <color name="divider">#424242</color>
+    <color name="divider_strong">#616161</color>
+    <color name="shadow">#60000000</color>
+    <color name="overlay">#80000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Gradient Colors - Brightened -->
+    <color name="gradient_start">#FF8A65</color>
+    <color name="gradient_end">#FFAB91</color>
+</resources>
