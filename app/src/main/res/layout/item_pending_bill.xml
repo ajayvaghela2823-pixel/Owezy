@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/card_margin"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation"
+    app:cardBackgroundColor="@color/card_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_default">
+
+        <!-- Group Icon -->
+        <ImageView
+            android:id="@+id/iv_group_icon"
+            android:layout_width="@dimen/avatar_size_medium"
+            android:layout_height="@dimen/avatar_size_medium"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@android:drawable/ic_menu_myplaces"
+            android:contentDescription="Group Icon" />
+
+        <!-- Group Info -->
+        <LinearLayout
+            android:id="@+id/ll_group_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_group_icon"
+            android:layout_marginStart="@dimen/spacing_medium"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Birthday House"
+                android:textSize="@dimen/text_body"
+                android:textColor="@color/text_primary"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/tv_group_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jan 21, 2024"
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="@dimen/spacing_tiny" />
+        </LinearLayout>
+
+        <!-- Amount and Status -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/tv_bill_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$4508.32"
+                android:textSize="@dimen/text_body"
+                android:textColor="@color/text_primary"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/tv_bill_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status_you_are_owed"
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/green_positive"
+                android:padding="@dimen/spacing_tiny"
+                android:background="@drawable/bg_pill_green"
+                android:layout_marginTop="@dimen/spacing_tiny" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

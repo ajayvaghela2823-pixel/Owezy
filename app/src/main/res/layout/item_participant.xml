@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <CheckBox
+        android:id="@+id/cb_participant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_participant_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:text="Participant Name" />
+
+    <EditText
+        android:id="@+id/et_custom_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="₹0.00"
+        android:inputType="numberDecimal"
+        android:visibility="gone" />
+
+</LinearLayout>
